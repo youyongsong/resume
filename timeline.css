@@ -1,0 +1,92 @@
+/* ================ The Timeline ================ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  width: 660px;
+  margin-left: 5px;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  background: rgb(80,80,80);
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  z-index: 5;
+}
+
+.timeline li {
+  position: relative;
+  padding: 5px 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  width: 20%;
+  padding-left: 10px;
+  border-radius: 5px;
+
+  font-size: medium;
+  font-weight: 500;
+  text-align: left;
+}
+
+.flag:before {
+  position: absolute;
+  top: -5px;;
+  left: -9px;
+  content: ' ';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid #3b8fb8;
+  z-index: 10;
+}
+.time-wrapper {
+  background: #3b8fb8;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.time-wrapper:before {
+  content: ' ';
+  top: -5px;
+  left: 14px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 14.5px solid transparent;
+  border-top: 14.5px solid transparent;
+  border-right: 14px solid #3b8fb8;
+}
+.desc {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
